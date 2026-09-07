@@ -15,17 +15,16 @@
 	<body class="is-preload">
 
 	<style>
-		.photos {
-			display: inline-block;
-            width: 48%;          /* each photo takes half the row */
-            vertical-align: top; /* keeps them aligned at the top */
-                }
-
-       .photos img {
-           width: 100%;         /* image fits inside its half */
-           height: auto;        /* keeps proportions */
-           border-radius: 6px;  /* optional, looks nice */
-                   }
+		.photo-row {
+			display: flex;
+			align-items: stretch;   /* ensures both items match height */
+			gap: 20px;              /* spacing between photos */
+		}
+		.photo-row img {
+			height: 300px;          /* shared height */
+			width: auto;            /* keeps proportions */
+			object-fit: contain;      /* optional */
+		}
 		        }
 	</style>
 
@@ -88,9 +87,7 @@
 	                                    <a target="_blank" href="images/DSC_7195.JPG">
 										    <img src="images/DSC_7195.JPG" alt="Eggshells boiling">
 										</a>
-									</div>
-
-										<div class="photos">
+										
 	                                    <a target="_blank" href="images/DSC_7197c.jpg">
 										    <img src="images/DSC_7197c.jpg" alt="Eggshells drying">
 										</a>
