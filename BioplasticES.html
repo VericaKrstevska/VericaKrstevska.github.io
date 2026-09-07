@@ -15,17 +15,16 @@
 	<body class="is-preload">
 
 	<style>
-		.photo-row {
-			display: flex;
-			align-items: stretch;   /* ensures both items match height */
-			gap: 20px;              /* spacing between photos */
-		}
-		.photo-row img {
-			height: 300px;          /* shared height */
-			width: auto;            /* keeps proportions */
-			object-fit: contain;      /* optional */
-		}
-		        }
+	.photos {
+		display: inline-block;
+		width: 48%;          /* each photo takes half the row */
+		align-items: stretch; /* keeps them aligned at the top */
+	}
+	.photos img {
+		width: 100%;         /* image fits inside its half */
+		height: auto;        /* keeps proportions */
+	}
+
 	</style>
 
 		<!-- Wrapper -->
